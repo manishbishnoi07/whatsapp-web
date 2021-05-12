@@ -47,7 +47,7 @@ router.get("/loggedIn", async (req, res) => {
 
 //Sign out
 router.get("/signout", (req, res) => {
-  res.clearCookie("foo").send(null);
+  res.clearCookie("authToken").send(null);
 });
 
 //Sign In
@@ -72,6 +72,7 @@ router.post("/signin", async (req, res) => {
       return res
         .cookie("authToken", token, {
           httpOnly: true,
+          sameSite: "none",
         })
         .send({
           name: user.name,
