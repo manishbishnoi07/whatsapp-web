@@ -73,6 +73,7 @@ router.post("/signin", async (req, res) => {
         .cookie("authToken", token, {
           httpOnly: true,
           sameSite: "none",
+          maxAge: 60000,
         })
         .send({
           name: user.name,
