@@ -78,8 +78,7 @@ router.post("/signin", async (req, res) => {
       return res
         .cookie("authToken", token, {
           httpOnly: true,
-          secure: process.env.NODE_ENV === "production" ? true : false,
-          expires: new Date(Date.now()),
+          expires: new Date(Date.now() + 25892000000),
         })
         .send({
           name: user.name,
