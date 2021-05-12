@@ -45,6 +45,14 @@ const Signin = ({ setUser }) => {
     setCpassword("");
   };
 
+  const switchToOther = () => {
+    setName("");
+    setEmail("");
+    setPassword("");
+    setCpassword("");
+    setSignin(!signin);
+  };
+
   return (
     <div className="signin">
       <img
@@ -113,12 +121,12 @@ const Signin = ({ setUser }) => {
       {signin ? (
         <p>
           Don't have an account?
-          <span onClick={() => setSignin(false)}>Sign Up</span>
+          <span onClick={switchToOther}>Sign Up</span>
         </p>
       ) : (
         <p>
           Already have an account?
-          <span onClick={() => setSignin(true)}>Sign In</span>
+          <span onClick={switchToOther}>Sign In</span>
         </p>
       )}
     </div>
