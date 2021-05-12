@@ -1,0 +1,52 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #090e11;
+}
+
+.app_body {
+  display: flex;
+  background-color: #262d31;
+  height: 95vh;
+  width: 90.8vw;
+}
+
+.app_bodyInfo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.7;
+}
+
+.app_bodyInfo span {
+  color: red;
+}
+
+.app_bodyLogo {
+  width: 35%;
+  height: 35%;
+  margin-bottom: 10px;
+}
+
+.app_bodyLogo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.app_bodyInfo h2 {
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.app_bodyInfo > p:first-of-type {
+  font-size: 17px;
+  margin-bottom: 10px;
+}

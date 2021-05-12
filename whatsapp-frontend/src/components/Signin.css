@@ -1,0 +1,48 @@
+.signin {
+  width: 60%;
+  max-width: 420px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+}
+
+.signin > img {
+  height: 80px;
+  width: 50%;
+}
+
+.signin > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signin > form > input {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #b2b2b2;
+}
+
+.signin > form > input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.signin > form > input:last-of-type {
+  background-color: #214542;
+  color: white;
+  cursor: pointer;
+}
+
+.signin > p {
+  font-weight: 700;
+  color: rgb(143, 143, 143);
+}
+.signin span {
+  margin-left: 3px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(104, 104, 104);
+}

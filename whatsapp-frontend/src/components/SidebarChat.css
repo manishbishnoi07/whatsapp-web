@@ -1,0 +1,37 @@
+.sidebarChat {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.createChat {
+  padding: 8px 17px 13px 17px;
+  color: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #30383d;
+}
+
+.sidebarChat__info {
+  border-bottom: 1px solid #30383d;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.sidebarChat:hover {
+  background-color: #2d3134;
+}
+
+.sidebarChat__info > h2 {
+  font-size: 16px;
+  margin: 14px 0 2px 0;
+  color: #dfe0e1;
+}
+
+.sidebarChat__info > p {
+  color: #9fa2a5;
+  font-size: 15px;
+  margin-bottom: 14px;
+}

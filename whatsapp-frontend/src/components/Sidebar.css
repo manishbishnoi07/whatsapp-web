@@ -1,0 +1,92 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  background-color: #131c21;
+  border-right: 1px solid #3f4448;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 7px 7px 14px;
+  background-color: #2a2f32;
+}
+
+.sidebar__headerLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar__headerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 10vw;
+}
+
+.sidebar__header .MuiSvgIcon-root,
+.MuiIconButton-label {
+  font-size: 21px !important;
+  color: #b1b3b5 !important;
+}
+
+.sidebar__headerLeft .MuiIconButton-root {
+  margin-left: 3px;
+}
+
+.sidebar__headerLeft .MuiIconButton-root:hover::after {
+  content: "Signout";
+  font-size: 7px;
+  color: white;
+  margin-left: 2px;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.sidebar__searchContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #323739;
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 1px;
+  margin-left: 10px;
+}
+.sidebar__searchContainer input {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  background-color: #323739;
+  color: #d4d5d7;
+  font-size: 13px;
+  margin-right: 20px;
+  width: 90%;
+}
+
+.sidebar__chats {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+/* width */
+.sidebar__chats::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.sidebar__chats::-webkit-scrollbar-thumb {
+  background: rgb(63, 63, 63);
+}
