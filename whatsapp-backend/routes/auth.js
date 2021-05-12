@@ -74,6 +74,7 @@ router.post("/signin", async (req, res) => {
         },
         process.env.TOKEN_SECRET
       );
+      console.log("This is token", token);
       return res
         .cookie("authToken", token, {
           httpOnly: true,
