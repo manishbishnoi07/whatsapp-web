@@ -50,7 +50,7 @@ router.get("/signout", (req, res) => {
   res
     .cookie("authToken", "", {
       httpOnly: true,
-      maxAge: 0,
+      expires: new Date(0),
       sameSite: "none",
     })
     .send(null);
@@ -79,7 +79,6 @@ router.post("/signin", async (req, res) => {
         .cookie("authToken", token, {
           httpOnly: true,
           sameSite: "none",
-          maxAge: 60000,
         })
         .send({
           name: user.name,
