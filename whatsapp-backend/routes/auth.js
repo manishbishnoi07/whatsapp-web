@@ -76,7 +76,8 @@ router.post("/signin", async (req, res) => {
       );
       return res
         .cookie("authToken", token, {
-          httpOnly: false,
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production" ? true : false,
         })
         .send({
           name: user.name,
