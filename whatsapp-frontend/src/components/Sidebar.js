@@ -59,7 +59,9 @@ const Sidebar = ({ user, setUser, setIsOpen }) => {
       {/* Sidebar Header */}
       <div className="sidebar__header">
         <div className="sidebar__headerLeft">
-          <Avatar src={`http://localhost:9000/image/${user.profileImage}`} />
+          <Avatar
+            src={`https://whatsapp-web.herokuapp.com/image/${user.profileImage}`}
+          />
           <IconButton onClick={handleSignout}>
             <BiLogOutCircle />
           </IconButton>

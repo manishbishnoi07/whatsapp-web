@@ -75,7 +75,7 @@ const Chat = ({ user }) => {
     <div className="chat">
       {/* Chat Header */}
       <div className="chat__header">
-        <Avatar src={`http://localhost:9000/image/${roomImage}`} />
+        <Avatar src={`https://whatsapp-web.herokuapp.com/image/${roomImage}`} />
         <div className="chat__headerInfo">
           <h4>{roomName}</h4>
           <p>

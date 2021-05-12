@@ -15,7 +15,7 @@ const SidebarChat = ({
   return !addNewChat ? (
     <Link to={`/rooms/${roomId}`}>
       <div className="sidebarChat">
-        <Avatar src={`http://localhost:9000/image/${roomImage}`} />
+        <Avatar src={`https://whatsapp-web.herokuapp.com/image/${roomImage}`} />
         <div className="sidebarChat__info">
           <h2>{roomName}</h2>
           <p>{prevMsg}</p>
