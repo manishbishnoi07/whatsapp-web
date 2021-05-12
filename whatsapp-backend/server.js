@@ -16,7 +16,7 @@ const port = process.env.PORT || 9000;
 //middlewares
 app.use(express.json());
 app.use(
-  cors({ origin: ["https://whatsapp-web-app.netlify.app/"], credentials: true })
+  cors({ origin: ["https://whatsapp-web-app.netlify.app"], credentials: true })
 );
 app.use(cookieParser());
 
