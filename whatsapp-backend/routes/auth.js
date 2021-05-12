@@ -74,12 +74,16 @@ router.post("/signin", async (req, res) => {
         },
         process.env.TOKEN_SECRET
       );
-      return res.cookie("authToken", token).send({
-        name: user.name,
-        email: user.email,
-        id: user._id,
-        profileImage: user.profileImage,
-      });
+      return res
+        .cookie("authToken", token, {
+          httpOnly: false,
+        })
+        .send({
+          name: user.name,
+          email: user.email,
+          id: user._id,
+          profileImage: user.profileImage,
+        });
     }
     res.send("Failure");
   } catch (err) {
