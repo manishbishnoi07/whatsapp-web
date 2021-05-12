@@ -78,8 +78,9 @@ router.post("/signin", async (req, res) => {
       return res
         .cookie("authToken", token, {
           httpOnly: true,
-          domain: "https://whatsapp-web-app.netlify.app",
-          expires: new Date(Date.now() + 25892000000),
+          secure: true,
+          maxAge: 1000 * 60 * 60 * 48,
+          sameSite: "none",
         })
         .send({
           name: user.name,
